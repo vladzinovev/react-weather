@@ -3,9 +3,7 @@ import { GlobalSvgSelector } from '../../../../assets/icons/global/GlobalSvgSele
 import s from './ThisDay.module.scss';
 
 interface Props{
-
 }
-
 export const ThisDay = (props: Props) =>{
     return (
         <div className={s.this__day}>
@@ -24,8 +22,6 @@ export const ThisDay = (props: Props) =>{
                     Город: <span>Санкт-Петербург</span> 
                 </div>
             </div>
-
         </div>
-    );
-    
+    ); 
 };
