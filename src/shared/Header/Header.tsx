@@ -40,7 +40,7 @@ export const Header = (props: Props) =>{
                 <div className={s.title}>React weather</div>
             </div>
             <div className={s.wrapper}>
-                <div className={s.change_theme}>
+                <div className={s.change_theme} onClick={changeTheme}>
                     <GlobalSvgSelector id="change-theme"/>
                 </div>
                 <Select 
