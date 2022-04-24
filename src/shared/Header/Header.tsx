@@ -28,15 +28,15 @@ export const Header = (props: Props) =>{
             borderRadius: '10px',
             zIndex: 100,
         }),
-    singleValue: (styles: any) => ({
-        ...styles,
-        color: theme.theme === Theme.DARK ? '#fff' : '#000',
+        singleValue: (styles: any) => ({
+            ...styles,
+            color: theme.theme === Theme.DARK ? '#fff' : '#000',
         }),
     };
 
     function changeTheme() {
         theme.changeTheme(theme.theme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT);
-      }
+    }
     return (
         <header className={s.header}> 
             <div className={s.wrapper}>
@@ -50,7 +50,7 @@ export const Header = (props: Props) =>{
                     <GlobalSvgSelector id="change-theme"/>
                 </div>
                 <Select 
-                    defaultValue={options[2]}
+                    defaultValue={options[0]}
                     styles={colorStyles} 
                     options={options} 
                 />
