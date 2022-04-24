@@ -9,6 +9,8 @@ interface Props{
 }
 
 export const Home = (props: Props) =>{
+    
+    
     return (
         <div className={s.home}>  
             <div className={s.wrapper}>
